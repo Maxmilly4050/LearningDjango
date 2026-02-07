@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Challenges</title>
+</head>
+<body>
+    <h1>Monthly Challenges</h1>
+    <ul>
+        {% for month in months %}
+            <li><a href="{% url 'challenges' month %}">{{ month|capfirst }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
